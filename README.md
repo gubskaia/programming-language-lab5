@@ -25,4 +25,4 @@ A simple blog application built with React, TypeScript, and CSS. This app displa
 
 ### Screenshot
 
-![Blog App Screenshot](/src/img/readme.png)
+![Blog App Screenshot](/vite-ts-app/src/img/readme.png)
