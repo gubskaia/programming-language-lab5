@@ -1,50 +1,29 @@
-# React + TypeScript + Vite
+# Laboratory Work №5
+## Vite React Blog Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple blog application built with React, TypeScript, and CSS. This app displays a list of blog posts from a local JSON file and includes a basic navigation bar.
 
-Currently, two official plugins are available:
+### Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Displays blog posts with title, cover image, and author information.
+- Easy to extend and modify.
+- Static data from a local JSON file.
 
-## Expanding the ESLint configuration
+### Project Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- `App.tsx`: Main component containing the navigation bar and the `Blog` component.
+- `components/Blog.tsx`: Component rendering blog posts based on `blog.json` data.
+- `App.css`: Contains styling for the app.
+- `blog.json`: Local file storing blog data (title, author, and cover image).
 
-- Configure the top-level `parserOptions` property like this:
+### Dependencies
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React**: JavaScript library for building user interfaces.
+- **TypeScript**: Adds static typing to JavaScript.
+- **CSS**: Used for styling.
+- **Vite**: Build tool that provides a faster and leaner development experience.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Screenshot
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+![Blog App Screenshot](./img/readme.png)
