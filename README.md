@@ -1,5 +1,4 @@
-# Laboratory Work №5
-## Vite React Blog Application
+# Vite React Blog Application
 
 A simple blog application built with React, TypeScript, and CSS. This app displays a list of blog posts from a local JSON file and includes a basic navigation bar.
 
